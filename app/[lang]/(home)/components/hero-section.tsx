@@ -1,3 +1,5 @@
+import { getDictionary } from "@/content";
+
 const validLangs = ["pt", "en"] as const;
 
 type Lang = (typeof validLangs)[number];
@@ -12,6 +14,8 @@ const heroSection = async ({ params }: {
   }>
 }) => {
   const { lang } = await params
+
+  /* const dict = getDictionary(lang) */
 
   return (
     <section>
