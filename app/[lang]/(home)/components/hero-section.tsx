@@ -1,27 +1,15 @@
-import { getDictionary } from "@/content";
+import { Dictionary } from "@/content"
 
-const validLangs = ["pt", "en"] as const;
-
-type Lang = (typeof validLangs)[number];
-
-const isValidLang = (lang: Lang) => {
-  return validLangs.includes(lang)
+type HeroSectionProps = {
+  copy: Dictionary["homePage"]["hero"]
 }
 
-const heroSection = async ({ params }: {
-  params: Promise<{
-    lang: string;
-  }>
-}) => {
-  const { lang } = await params
-
-  /* const dict = getDictionary(lang) */
-
+export const HeroSection = ({ copy }: HeroSectionProps) => {
   return (
     <section>
-      <h1></h1>
+      <p>{copy.eyebrow}</p>
+      <h1 className="font-bold text-4xl">{copy.headline}</h1>
+      <p className="text-[#C3C2B7]">{copy.description}</p>
     </section>
   )
 }
-
-export default heroSection

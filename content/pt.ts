@@ -6,7 +6,6 @@ export const pt = {
     contact: "Contato",
     downloadCv: "Baixar currículo",
   },
-
   homePage: {
     hero: {
       eyebrow:

@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { en } from "./en";
 import { pt } from "./pt";
 
@@ -8,6 +9,14 @@ export const dictionaries = {
 
 export type Locale = keyof typeof dictionaries;
 
-export function getDictionary(locale: Locale) {
+export type Dictionary = (typeof dictionaries)[Locale]
+
+export const hasLocale = (locale: string): locale is Locale =>
+  locale in dictionaries
+
+export function getDictionary(locale: string) {
+  if (!hasLocale(locale)) {
+    notFound()
+  }
   return dictionaries[locale];
 }
