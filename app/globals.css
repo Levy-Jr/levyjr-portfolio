@@ -2,4 +2,7 @@
 
 @theme inline {
   --color-black-bg: #242423;
+  --color-main-orange: #D87658;
+
+  --spacing-container: min(90%, 75rem);
 }

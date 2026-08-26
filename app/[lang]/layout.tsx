@@ -2,6 +2,8 @@ import { Instrument_Sans, Manrope, Inter, Fustat } from 'next/font/google'
 import type { Metadata } from "next";
 import "../globals.css";
 import { locales } from "@/lib/i18n";
+import Header from '@/components/header';
+import { getDictionary } from '@/content';
 
 export const metadata: Metadata = {
   title: "Levy Jr. | Software Developer",
@@ -40,13 +42,17 @@ export default async function RootLayout({
   }>
 }>) {
   const { lang } = await params
+  const dict = getDictionary(lang)
 
   return (
     <html
       lang={lang}
       className={`antialiased`}
     >
-      <body className={`${instrumentsSans.className} min-h-full text-white bg-black-bg`}>{children}</body>
+      <body className={`${instrumentsSans.className} min-h-full text-white bg-black-bg`}>
+        <Header copy={dict.nav} lang={lang} />
+        {children}
+      </body>
     </html>
   );
 }

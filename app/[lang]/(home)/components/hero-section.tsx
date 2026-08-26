@@ -7,7 +7,7 @@ type HeroSectionProps = {
 export const HeroSection = ({ copy }: HeroSectionProps) => {
   return (
     <section>
-      <p>{copy.eyebrow}</p>
+      <p className="text-sm text-main-orange">{copy.eyebrow}</p>
       <h1 className="font-bold text-4xl">{copy.headline}</h1>
       <p className="text-[#C3C2B7]">{copy.description}</p>
     </section>
