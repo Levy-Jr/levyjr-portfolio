@@ -23,7 +23,7 @@ const Header = ({ copy, lang }: HeaderProps) => {
 
   return (
     <header className="w-container mx-auto mt-10 mb-22.5 flex justify-between items-center">
-      <div></div>
+      <div />
       <nav
         className="rounded-[100vmax] bg-linear-to-b from-[#797979] to-[#363636] p-px"
         aria-label="primary navigation"

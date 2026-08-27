@@ -13,7 +13,7 @@ export const pt = {
       headline:
         "Construo projetos web comerciais com foco em performance, integrações e operação em produção.",
       description:
-        "Tenho mais de 2 anos de experiência freelance desenvolvendo, publicando e mantendo sites, e-commerce e aplicações web para clientes comerciais.",
+        "Tenho mais de 2 anos de experiência desenvolvendo, publicando e mantendo sites, landing pages, projetos de e-commerce e plataformas web para clientes comerciais.",
       primaryButton: "Ver projetos",
       secondaryButton: "Baixar currículo",
       contactButton: "Entrar em contato",

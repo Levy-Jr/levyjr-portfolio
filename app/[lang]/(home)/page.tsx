@@ -11,7 +11,7 @@ const Home = async ({ params }: {
 
   return (
     <main>
-      <HeroSection copy={dict.homePage.hero} />
+      <HeroSection copy={dict.homePage.hero} lang={lang} />
     </main>
   );
 }
