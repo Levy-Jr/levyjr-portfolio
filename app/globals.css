@@ -4,5 +4,13 @@
   --color-black-bg: #242423;
   --color-main-orange: #D87658;
 
-  --spacing-container: min(90%, 75rem);
+  --spacing-container: min(90%, 75.625rem);
+}
+
+.gradient-border {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(color-mix(in srgb, white 2%, var(--color-black-bg)),
+      color-mix(in srgb, white 2%, var(--color-black-bg))) padding-box,
+    linear-gradient(to bottom, #797979, #363636) border-box;
 }

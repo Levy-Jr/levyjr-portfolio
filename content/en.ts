@@ -6,6 +6,10 @@ export const en = {
     contact: "Contact",
     downloadCv: "Download CV",
   },
+  footer: {
+    copyright: "© 2026 Levy Gomes — Web Developer.",
+    cvHref: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
+  },
 
   homePage: {
     hero: {
@@ -18,6 +22,28 @@ export const en = {
       primaryButton: "View projects",
       secondaryButton: "Download CV",
       contactButton: "Get in touch",
+    },
+
+    experienceSummary: {
+      title: "Web development experience and capabilities summary",
+      items: [
+        {
+          title: "2+ years",
+          description: "Freelance experience delivering commercial projects",
+        },
+        {
+          title: "Deployment and production",
+          description: "Linux VPS, Coolify, domains, SSL, and Docker",
+        },
+        {
+          title: "Projects",
+          description: "Websites, landing pages, e-commerce, and web platforms",
+        },
+        {
+          title: "Integrations",
+          description: "Payments, tracking, webhooks, and maintenance",
+        },
+      ],
     },
 
     featuredProjects: {

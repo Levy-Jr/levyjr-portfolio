@@ -6,6 +6,10 @@ export const pt = {
     contact: "Contato",
     downloadCv: "Baixar currículo",
   },
+  footer: {
+    copyright: "© 2026 Levy Gomes — Desenvolvedor Web.",
+    cvHref: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
+  },
   homePage: {
     hero: {
       eyebrow:
@@ -17,6 +21,28 @@ export const pt = {
       primaryButton: "Ver projetos",
       secondaryButton: "Baixar currículo",
       contactButton: "Entrar em contato",
+    },
+
+    experienceSummary: {
+      title: "Resumo da experiência e das competências em desenvolvimento web",
+      items: [
+        {
+          title: "+ 2 anos",
+          description: "Experiência freelance em projetos comerciais",
+        },
+        {
+          title: "Deploy e produção",
+          description: "VPS Linux, Coolify, domínio, SSL e Docker",
+        },
+        {
+          title: "Projetos",
+          description: "Sites, landing pages, e-commerces e plataformas web",
+        },
+        {
+          title: "Integração",
+          description: "Pagamentos, tracking, webhooks e manutenção",
+        },
+      ],
     },
 
     featuredProjects: {

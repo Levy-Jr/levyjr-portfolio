@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import { locales } from "@/lib/i18n";
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 import { getDictionary } from '@/content';
 
 export const metadata: Metadata = {
@@ -49,9 +50,10 @@ export default async function RootLayout({
       lang={lang}
       className={`antialiased`}
     >
-      <body className={`${instrumentsSans.className} min-h-full text-white bg-black-bg`}>
+      <body className={`${instrumentsSans.className} min-h-screen flex flex-col text-white bg-black-bg`}>
         <Header copy={dict.nav} lang={lang} />
         {children}
+        <Footer copy={dict.footer} navCopy={dict.nav} lang={lang} />
       </body>
     </html>
   );

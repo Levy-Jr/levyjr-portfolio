@@ -1,5 +1,6 @@
 import { getDictionary } from "@/content";
 import { HeroSection } from "./components/hero-section";
+import ExperienceSummary from "./components/experience-summary";
 
 const Home = async ({ params }: {
   params: Promise<{
@@ -12,6 +13,7 @@ const Home = async ({ params }: {
   return (
     <main>
       <HeroSection copy={dict.homePage.hero} lang={lang} />
+      <ExperienceSummary copy={dict.homePage.experienceSummary} />
     </main>
   );
 }
