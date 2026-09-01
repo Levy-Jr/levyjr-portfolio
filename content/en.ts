@@ -7,7 +7,7 @@ export const en = {
     downloadCv: "Download CV",
   },
   footer: {
-    copyright: "© 2026 Levy Gomes — Web Developer.",
+    copyright: "Levy Gomes — Web Developer.",
     cvHref: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
   },
 
@@ -73,11 +73,37 @@ export const en = {
     skills: {
       title: "A technical stack applied to commercial projects",
       description:
-        "The technologies and tools I use to build, integrate, launch, and maintain web projects in production.",
+        "The technologies and tools I use to develop, integrate, launch, and maintain web projects in production.",
+      groups: [
+        {
+          title: "Web Development:",
+          items: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
+        },
+        {
+          title: "Backend and Databases:",
+          items: ["Node.js", "Express", "REST APIs", "PostgreSQL", "Prisma ORM"],
+        },
+        {
+          title: "E-commerce and Integrations:",
+          items: [
+            "WooCommerce Headless",
+            "Mercado Pago",
+            "Stripe",
+            "Webhooks",
+            "Meta Pixel/CAPI",
+            "Google Tag Manager",
+            "Google Analytics",
+          ],
+        },
+        {
+          title: "Deployment and Infrastructure:",
+          items: ["Linux", "Hostinger", "Coolify", "Docker", "SSH", "DNS", "SSL", "Basic firewall"],
+        },
+      ],
     },
 
     businessImpact: {
-      title: "Hands-on experience beyond the code",
+      title: "Experience beyond the code",
       subtitle:
         "Commercial projects require more than an attractive interface. They need to work, convert, integrate with other tools, and remain stable after launch.",
       description:
@@ -97,6 +123,9 @@ export const en = {
         "I am particularly interested in an area many developers overlook: what happens after the code is ready.",
       paragraph:
         "In addition to interface development, I handle the deployment, configuration, and basic maintenance of production projects. This includes Linux VPS environments, SSH access, domain and SSL configuration, Coolify, Docker, environment variables, webhooks, tracking tools, and post-deployment monitoring.",
+      conclusion:
+        "My main focus remains web development, but my experience with deployment and maintenance helps me deliver more complete projects with less reliance on third parties.",
+      diagramAlt: "Workflow from development through production maintenance",
     },
     currentFocus: {
       title: "Moving towards a more professional workflow",
@@ -109,8 +138,8 @@ export const en = {
         "If you would like to learn more about my work, projects, technical experience, or potential collaborations, feel free to get in touch.",
       description:
         "I am also open to conversations about web development, technology, commercial projects, and professional opportunities.",
-      emailButton: "Send an email",
-      linkedinButton: "Connect on LinkedIn",
+      emailButton: "Send Email",
+      linkedinButton: "View LinkedIn",
       githubButton: "View GitHub",
     },
   },

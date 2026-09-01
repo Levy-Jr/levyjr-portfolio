@@ -7,7 +7,7 @@ export const pt = {
     downloadCv: "Baixar currículo",
   },
   footer: {
-    copyright: "© 2026 Levy Gomes — Desenvolvedor Web.",
+    copyright: "Levy Gomes — Desenvolvedor Web.",
     cvHref: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
   },
   homePage: {
@@ -67,11 +67,37 @@ export const pt = {
     },
     skills: {
       title: "Stack técnica aplicada em projetos comerciais",
-      description: "Tecnologias e ferramentas que utilizo para construir, integrar, publicar e manter projetos web em produção.",
+      description: "Tecnologias e ferramentas que utilizo para desenvolver, integrar, publicar e manter projetos web em produção.",
+      groups: [
+        {
+          title: "Desenvolvimento Web:",
+          items: ["Next.js", "React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML", "CSS"],
+        },
+        {
+          title: "Backend e Banco de Dados:",
+          items: ["Node.js", "Express", "REST APIs", "PostgreSQL", "Prisma ORM"],
+        },
+        {
+          title: "E-commerce e Integrações:",
+          items: [
+            "WooCommerce Headless",
+            "Mercado Pago",
+            "Stripe",
+            "Webhooks",
+            "Meta Pixel/CAPI",
+            "Google Tag Manager",
+            "Google Analytics",
+          ],
+        },
+        {
+          title: "Deploy e Infraestrutura:",
+          items: ["Linux", "Hostinger", "Coolify", "Docker", "SSH", "DNS", "SSL", "Firewall básico"],
+        },
+      ],
     },
 
     businessImpact: {
-      title: "Experiência prática, além do código",
+      title: "Experiência além do código",
       subtitle: "Projetos comerciais exigem mais do que uma interface bonita. Eles precisam funcionar, converter, integrar ferramentas e continuar estáveis depois da publicação.",
       description: "Minha experiência como freelancer me colocou em contato direto com clientes, requisitos de negócio, escopo, prazos, deploy, manutenção e suporte pós-entrega. Isso me ajudou a desenvolver uma visão prática sobre desenvolvimento web: entender o objetivo do projeto, construir uma solução funcional e cuidar dos detalhes técnicos necessários para colocá-la em produção.",
       bulletPoints: [
@@ -86,7 +112,9 @@ export const pt = {
     productionWorkflow: {
       headline: "Do desenvolvimento ao ambiente de produção",
       subtitle: "Tenho interesse especial na parte que muitos desenvolvedores ignoram: o que acontece depois que o código fica pronto.",
-      paragraph: "Além do desenvolvimento da interface, também atuo com publicação, configuração e manutenção básica de projetos em produção. Isso inclui VPS Linux, acesso via SSH, configuração de domínio e SSL, Coolify, Docker, variáveis de ambiente, webhooks, ferramentas de rastreamento e acompanhamento de funcionamento após o deploy."
+      paragraph: "Além do desenvolvimento da interface, também atuo com publicação, configuração e manutenção básica de projetos em produção. Isso inclui VPS Linux, acesso via SSH, configuração de domínio e SSL, Coolify, Docker, variáveis de ambiente, webhooks, ferramentas de rastreamento e acompanhamento de funcionamento após o deploy.",
+      conclusion: "Meu foco principal continua sendo desenvolvimento web, mas ter vivência com deploy e manutenção me ajuda a entregar projetos mais completos e com menos dependência de terceiros.",
+      diagramAlt: "Fluxo de trabalho do desenvolvimento à manutenção em produção",
     },
     currentFocus: {
       title: "Evoluindo para um fluxo mais profissional",
@@ -97,8 +125,8 @@ export const pt = {
       title: "Vamos conversar?",
       subtitle: "Se você quer saber mais sobre meu trabalho, projetos, experiência técnica ou possibilidades de colaboração, fique à vontade para entrar em contato.",
       description: "Também estou aberto a conversas sobre desenvolvimento web, tecnologia, projetos comerciais e oportunidades profissionais.",
-      emailButton: "Enviar email",
-      linkedinButton: "Conectar no LinkedIn",
+      emailButton: "Enviar Email",
+      linkedinButton: "Ver LinkedIn",
       githubButton: "Ver GitHub",
     },
   },

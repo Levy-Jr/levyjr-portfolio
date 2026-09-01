@@ -17,6 +17,9 @@ type FooterProps = {
 const Footer = ({ copy, lang, navCopy }: FooterProps) => {
   const pathname = usePathname()
 
+  const date = new Date()
+  const currentYear = date.getFullYear()
+
   const navItems = [
     { label: navCopy.home, href: `/${lang}` },
     { label: navCopy.projects, href: `/${lang}/projects` },
@@ -25,7 +28,7 @@ const Footer = ({ copy, lang, navCopy }: FooterProps) => {
   ]
 
   return (
-    <footer className="w-container mx-auto pt-24 mt-25 mb-35">
+    <footer className="w-container mx-auto mt-25 mb-35">
       <div className="border-t border-[#363636] pt-10 pb-3">
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <nav aria-label="footer navigation">
@@ -71,7 +74,7 @@ const Footer = ({ copy, lang, navCopy }: FooterProps) => {
         </div>
 
         <p className="mt-7 text-center text-sm text-[#C3C2B7] sm:text-base">
-          {copy.copyright}
+          © {currentYear} {copy.copyright}
         </p>
       </div>
     </footer>
