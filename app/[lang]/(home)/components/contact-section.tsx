@@ -13,7 +13,7 @@ type ContactSectionProps = {
   cvLabel: string
 }
 
-const controlClassName = "inline-flex items-center justify-center gap-2.5 rounded-lg px-5 py-2.5 font-medium text-white transition-[filter] hover:brightness-125 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+const controlClassName = "inline-flex w-full items-center justify-center gap-2.5 whitespace-nowrap rounded-lg px-5 py-2.5 font-medium text-white transition-[filter] hover:brightness-125 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:w-auto"
 
 const ContactSection = ({ copy, cvHref, cvLabel }: ContactSectionProps) => (
   <section
@@ -24,11 +24,11 @@ const ContactSection = ({ copy, cvHref, cvLabel }: ContactSectionProps) => (
       {copy.title}
     </h2>
 
-    <p className="mt-3 max-w-100 leading-[1.2065] text-[#C3C2B7]">
+    <p className="mt-3 max-w-100 text-[#C3C2B7]">
       {copy.subtitle}
     </p>
 
-    <div className="mt-8 flex flex-wrap gap-2.5">
+    <div className="mt-8 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
       <Link
         className={cn(controlClassName, "bg-main-orange")}
         href={cvHref}

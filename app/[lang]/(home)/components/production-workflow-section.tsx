@@ -18,9 +18,9 @@ const ProductionWorkflowSection = ({ copy }: ProductionWorkflowSectionProps) => 
       >
         {copy.headline}
       </h2>
-      <p className="mt-3 leading-[1.2065] text-[#C3C2B7]">{copy.subtitle}</p>
-      <p className="mt-7 leading-[1.2065] text-[#C3C2B7]">{copy.paragraph}</p>
-      <p className="mt-7 leading-[1.2065] text-[#C3C2B7]">{copy.conclusion}</p>
+      <p className="mt-3 text-[#C3C2B7]">{copy.subtitle}</p>
+      <p className="mt-7 text-[#C3C2B7]">{copy.paragraph}</p>
+      <p className="mt-7 text-[#C3C2B7]">{copy.conclusion}</p>
     </div>
 
     <Image

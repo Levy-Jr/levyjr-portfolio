@@ -17,7 +17,7 @@ const ExperienceSummary = ({ copy }: ExperienceSummaryProps) => (
       {copy.items.map((item) => (
         <div key={item.title}>
           <dt className="text-xl font-semibold">{item.title}</dt>
-          <dd className="mt-3.75 leading-[1.2065] text-[#C3C2B7]">
+          <dd className="mt-3.75 text-[#C3C2B7]">
             {item.description}
           </dd>
         </div>

@@ -57,11 +57,11 @@ const Footer = ({ copy, lang, navCopy }: FooterProps) => {
 
           <div className="flex items-center gap-5">
             <nav className="text-[#C3C2B7]" aria-label="footer language navigation">
-              <Link className={cn("transition-colors hover:text-white", lang === "pt" && "text-white")} href="/pt">
+              <Link scroll={false} className={cn("transition-colors hover:text-white", lang === "pt" && "text-white")} href="/pt">
                 PT
               </Link>{" "}
               <span>/</span>{" "}
-              <Link className={cn("transition-colors hover:text-white", lang === "en" && "text-white")} href="/en">
+              <Link scroll={false} className={cn("transition-colors hover:text-white", lang === "en" && "text-white")} href="/en">
                 EN
               </Link>
             </nav>

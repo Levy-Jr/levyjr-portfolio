@@ -22,13 +22,13 @@ const Header = ({ copy, lang }: HeaderProps) => {
   ]
 
   return (
-    <header className="w-container mx-auto mt-10 mb-22.5 flex justify-between items-center">
-      <div />
+    <header className="w-container mx-auto mt-5 mb-16 grid grid-cols-[1fr_auto] items-center gap-4 md:mt-10 md:mb-22.5 md:grid-cols-[1fr_auto_1fr]">
+      <div className="hidden md:block" aria-hidden="true" />
       <nav
-        className="rounded-[100vmax] bg-linear-to-b from-[#797979] to-[#363636] p-px"
+        className="w-fit justify-self-start rounded-[100vmax] bg-linear-to-b from-[#797979] to-[#363636] p-px md:justify-self-center"
         aria-label="primary navigation"
       >
-        <ul className="flex items-center gap-2.5 rounded-[69px] bg-black-bg p-2.75 backdrop-blur-2xl">
+        <ul className="flex items-center gap-1.5 rounded-[69px] bg-black-bg p-1.5 backdrop-blur-2xl md:gap-2.5 md:p-2.75">
           {navItems.map((item) => {
             const isActive = pathname === item.href ||
               (item.href !== `/${lang}` && pathname.startsWith(`${item.href}/`))
@@ -37,11 +37,12 @@ const Header = ({ copy, lang }: HeaderProps) => {
               <li key={item.href}>
                 <Link
                   className={cn(
-                    "group flex items-center justify-center gap-2.5 rounded-full border border-[#363636] px-3.75 py-2 text-base text-[#C3C2B7] transition-colors duration-200 hover:border-[#797979] hover:bg-white/5 hover:text-white",
+                    "group flex size-11 items-center justify-center rounded-full border border-[#363636] text-[#C3C2B7] transition-colors duration-200 hover:border-[#797979] hover:bg-white/5 hover:text-white md:size-auto md:gap-2.5 md:px-3.75 md:py-2 md:text-base",
                     isActive && "border-[#797979] bg-white/5 text-white",
                   )}
                   href={item.href}
                   aria-current={isActive ? "page" : undefined}
+                  aria-label={item.label}
                 >
                   <Image
                     className={cn(
@@ -53,19 +54,19 @@ const Header = ({ copy, lang }: HeaderProps) => {
                     width={24}
                     height={24}
                   />
-                  {item.label}
+                  <span className="hidden md:inline">{item.label}</span>
                 </Link>
               </li>
             )
           })}
         </ul>
       </nav>
-      <nav className="text-[#C3C2B7]" aria-label="language navigation">
-        <Link className={cn(lang === "pt" && "text-white")} href="/pt">
+      <nav className="justify-self-end text-sm text-[#C3C2B7] md:text-base" aria-label="language navigation">
+        <Link className={cn("transition-colors hover:text-white", lang === "pt" && "text-white")} href="/pt">
           PT
         </Link>{" "}
         <span>/</span>{" "}
-        <Link className={cn(lang === "en" && "text-white")} href="/en">
+        <Link className={cn("transition-colors hover:text-white", lang === "en" && "text-white")} href="/en">
           EN
         </Link>
       </nav>

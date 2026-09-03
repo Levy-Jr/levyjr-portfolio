@@ -21,7 +21,7 @@ const SkillsSection = ({ copy }: SkillsSectionProps) => (
           <ul className="mt-4.5 flex max-w-[39rem] flex-wrap gap-x-1.25 gap-y-3.75">
             {group.items.map((skill) => (
               <li
-                className="rounded-md bg-[#30302E] px-2.5 py-1 leading-[1.125]"
+                className="rounded-md bg-[#30302E] px-2.5 py-1"
                 key={skill}
               >
                 {skill}

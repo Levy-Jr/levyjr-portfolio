@@ -47,12 +47,12 @@ export const en = {
     },
 
     featuredProjects: {
-      title: "Featured commercial projects",
+      title: "Featured projects",
       description:
-        "Projects that showcase my experience in web development, e-commerce, checkout flows, integrations, deployment, and production maintenance.",
+        "A selection of projects showcasing my experience in web development, e-commerce, checkout flows, integrations, deployment, and production maintenance.",
       projects: [
         {
-          title: "FXSoftwares — Headless E-commerce for Digital Products",
+          title: "FX Softwares — Headless E-commerce for Digital Products",
           description:
             "An e-commerce frontend for digital software products, featuring a product catalogue, search, filters, cart, checkout, order history, and automatic delivery after payment.",
         },
@@ -68,6 +68,7 @@ export const en = {
             "A real estate website with property and agent pages, featured listings, responsive components, and Google Maps integration.",
         },
       ],
+      highlightsLabel: "Highlights",
       viewAllButton: "View all projects",
     },
     skills: {
@@ -159,7 +160,7 @@ export const en = {
       projects: [
         {
           slug: "fxsoftwares",
-          title: "FXSoftwares",
+          title: "FX Softwares",
           type: "Headless E-commerce for Digital Products",
           description:
             "An e-commerce frontend with a product catalogue, search, filters, cart, checkout, order history, and automatic delivery after payment approval.",
