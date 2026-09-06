@@ -143,6 +143,21 @@ export const pt = {
         "Uma seleção de sites, landing pages, plataformas web e projetos de e-commerce que desenvolvi para clientes comerciais, com foco em interface, integrações, deploy e manutenção.",
     },
 
+    project: {
+      backToProjects: "Voltar para projetos",
+      stackTitle: "Stacks",
+      roleTitle: "Meu papel:",
+      contextTitle: "Contexto do projeto",
+      developmentTitle: "O que foi desenvolvido",
+      featuresTitle: "Principais funcionalidades",
+      navigationLabel: "Navegação entre projetos",
+      statuses: {
+        production: "Em produção",
+        deactivated: "Desativado",
+        demo: "Demo",
+      },
+    },
+
     featured: {
       title: "Estudos de caso em destaque",
       description:
@@ -153,6 +168,7 @@ export const pt = {
           slug: "fxsoftwares",
           title: "FX Softwares",
           type: "E-commerce Headless de Produtos Digitais",
+          status: "production",
           description:
             "Frontend de e-commerce com catálogo, busca, filtros, carrinho, checkout, histórico de pedidos e entrega automática após aprovação do pagamento.",
           highlights: [
@@ -179,12 +195,37 @@ export const pt = {
             github: "", // add if public
           },
           cta: "Ver estudo de caso",
+          details: {
+            role: [
+              "Atuei no desenvolvimento frontend, integrações backend, deploy e manutenção.",
+            ],
+            context: [
+              "O projeto foi desenvolvido para estruturar uma operação de venda online de softwares digitais, com foco em apresentar produtos, permitir compra direta pelo site e automatizar parte do processo de entrega após a confirmação do pagamento.",
+              "A proposta era criar uma experiência mais completa do que uma página simples de vendas, incluindo navegação por produtos, carrinho, checkout, histórico de pedidos e integração com ferramentas comerciais e de rastreamento.",
+            ],
+            development: [
+              "Desenvolvi o frontend do e-commerce utilizando Next.js, React, TypeScript e Tailwind CSS, criando páginas de produtos, busca, filtros, carrinho, checkout e área de histórico de pedidos.",
+              "Também trabalhei na integração com WooCommerce, Mercado Pago, NextAuth e Resend para conectar produtos, clientes, pedidos, pagamentos e envio automático de links de entrega após aprovação do pagamento.",
+            ],
+            features: [
+              "Catálogo de produtos digitais",
+              "Busca e filtros de produtos",
+              "Carrinho e fluxo de checkout",
+              "Histórico de pedidos",
+              "Integração com WooCommerce",
+              "Pagamento via Mercado Pago",
+              "Entrega automática após aprovação do pagamento",
+              "Rastreamento com Meta Pixel/CAPI",
+              "Deploy em VPS com Coolify",
+            ],
+          },
         },
 
         {
           slug: "viralizaaigo-checkout",
           title: "Viralizaaigo",
           type: "Plataforma de Checkout para Serviços Digitais",
+          status: "activated",
           description:
             "Plataforma criada para reduzir atendimento manual na venda de serviços digitais, com seleção de pacotes, pagamento via PIX, confirmação automática por webhook e painel administrativo.",
           highlights: [
@@ -208,12 +249,34 @@ export const pt = {
             github: "",
           },
           cta: "Ver estudo de caso",
+          details: {
+            role: [
+              "Atuei no desenvolvimento da plataforma, nas integrações de pagamento, no painel administrativo, no deploy e na manutenção.",
+            ],
+            context: [
+              "O projeto foi criado para reduzir o atendimento manual durante a venda de serviços digitais e tornar o processo de compra mais direto para o cliente.",
+              "A plataforma reúne seleção de pacotes, pagamento via PIX, confirmação automática por webhook e controle administrativo em um único fluxo.",
+            ],
+            development: [
+              "Desenvolvi o fluxo de checkout com Next.js e TypeScript, além da integração com Mercado Pago para gerar pagamentos via PIX e confirmar transações automaticamente por webhook.",
+              "Também implementei o painel administrativo, a autenticação e a persistência de dados com NextAuth, Prisma e PostgreSQL.",
+            ],
+            features: [
+              "Seleção de pacotes de serviços",
+              "Checkout personalizado",
+              "PIX com QR Code e copia-e-cola",
+              "Confirmação automática por webhook",
+              "Painel administrativo",
+              "Controle de preços e disponibilidade",
+            ],
+          },
         },
 
         {
           slug: "marques-leao",
           title: "Marques&Leão",
           type: "Site Imobiliário com Mapa e Vitrine de Imóveis",
+          status: "production",
           description:
             "Site imobiliário com páginas de imóveis, corretores, vitrine de propriedades, componentes responsivos e integração com Google Maps.",
           highlights: [
@@ -236,6 +299,26 @@ export const pt = {
             github: "",
           },
           cta: "Ver estudo de caso",
+          details: {
+            role: [
+              "Atuei no desenvolvimento frontend, na criação de componentes responsivos e na integração com Google Maps.",
+            ],
+            context: [
+              "O projeto foi desenvolvido para apresentar imóveis e corretores em uma interface comercial clara, responsiva e fácil de navegar.",
+              "A experiência reúne uma vitrine de propriedades, páginas dinâmicas e recursos de mapa para ajudar visitantes a explorar os imóveis disponíveis.",
+            ],
+            development: [
+              "Desenvolvi a interface com Next.js, React, TypeScript e Tailwind CSS, estruturando componentes responsivos para a vitrine e as páginas de imóveis e corretores.",
+              "Também implementei a integração com Google Maps para complementar a apresentação e a localização das propriedades.",
+            ],
+            features: [
+              "Vitrine de imóveis",
+              "Páginas dinâmicas de imóveis e corretores",
+              "Integração com Google Maps",
+              "Componentes responsivos",
+              "Interface comercial",
+            ],
+          },
         },
       ],
     },

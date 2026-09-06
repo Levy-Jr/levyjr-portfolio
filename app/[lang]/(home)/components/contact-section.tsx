@@ -38,7 +38,12 @@ const ContactSection = ({ copy, cvHref, cvLabel }: ContactSectionProps) => (
         <Image src={DownloadCV} alt="" width={24} height={24} />
       </Link>
 
-      <a href="mailto:levyjrdev@gmail.com" className={cn(controlClassName, "gradient-border")}>
+      <a
+        href="mailto:levyjrdev@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cn(controlClassName, "gradient-border")}
+      >
         {copy.emailButton}
         <Image src={Email} alt="" width={24} height={24} />
       </a>

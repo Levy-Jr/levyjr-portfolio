@@ -156,6 +156,21 @@ export const en = {
         "A selection of websites, landing pages, web platforms, and e-commerce projects I have built for commercial clients, with a focus on interfaces, integrations, deployment, and maintenance.",
     },
 
+    project: {
+      backToProjects: "Back to projects",
+      stackTitle: "Stacks",
+      roleTitle: "My role:",
+      contextTitle: "Project context",
+      developmentTitle: "What I built",
+      featuresTitle: "Key features",
+      navigationLabel: "Project navigation",
+      statuses: {
+        production: "In production",
+        deactivated: "Deactivated",
+        demo: "Demo",
+      },
+    },
+
     featured: {
       title: "Featured case studies",
       description:
@@ -166,6 +181,7 @@ export const en = {
           slug: "fxsoftwares",
           title: "FX Softwares",
           type: "Headless E-commerce for Digital Products",
+          status: "production",
           description:
             "An e-commerce frontend with a product catalogue, search, filters, cart, checkout, order history, and automatic delivery after payment approval.",
           highlights: [
@@ -188,16 +204,41 @@ export const en = {
           ],
           links: {
             caseStudy: "/en/projects/fxsoftwares",
-            live: "fxsoftwares.com.br", // add if available
+            live: "https://fxsoftwares.com.br", // add if available
             github: "", // add if public
           },
           cta: "View case study",
+          details: {
+            role: [
+              "I worked on frontend development, backend integrations, deployment, and maintenance.",
+            ],
+            context: [
+              "The project was built to support an online digital software business, with a focus on presenting products, enabling direct purchases through the website, and automating part of the delivery process after payment approval.",
+              "The goal was to create a more complete experience than a simple sales page, including product browsing, a cart, checkout, order history, and integrations with commercial and tracking tools.",
+            ],
+            development: [
+              "I built the e-commerce frontend with Next.js, React, TypeScript, and Tailwind CSS, including product pages, search, filters, the cart, checkout, and the order history area.",
+              "I also worked on the WooCommerce, Mercado Pago, NextAuth, and Resend integrations that connect products, customers, orders, and payments, and automatically send delivery links after payment approval.",
+            ],
+            features: [
+              "Digital product catalogue",
+              "Product search and filters",
+              "Cart and checkout flow",
+              "Order history",
+              "WooCommerce integration",
+              "Mercado Pago payments",
+              "Automatic delivery after payment approval",
+              "Tracking with Meta Pixel/CAPI",
+              "Deployment to a VPS with Coolify",
+            ],
+          },
         },
 
         {
           slug: "viralizaaigo-checkout",
           title: "Viralizaaigo",
           type: "Checkout Platform for Digital Services",
+          status: "deactivated",
           description:
             "A platform designed to reduce manual support when selling digital services, with package selection, PIX payments, automatic webhook confirmation, and an admin dashboard.",
           highlights: [
@@ -217,16 +258,38 @@ export const en = {
           ],
           links: {
             caseStudy: "/en/projects/viralizaaigo-checkout",
-            live: "viralizaaigo.com",
+            live: "https://viralizaaigo.com",
             github: "",
           },
           cta: "View case study",
+          details: {
+            role: [
+              "I worked on the platform, its payment integrations, the admin dashboard, deployment, and maintenance.",
+            ],
+            context: [
+              "The project was created to reduce the manual support involved in selling digital services and make the buying process more direct for customers.",
+              "The platform brings package selection, PIX payments, automatic webhook confirmation, and administrative controls into a single flow.",
+            ],
+            development: [
+              "I built the checkout flow with Next.js and TypeScript, along with the Mercado Pago integration that generates PIX payments and automatically confirms transactions through webhooks.",
+              "I also implemented the admin dashboard, authentication, and data persistence with NextAuth, Prisma, and PostgreSQL.",
+            ],
+            features: [
+              "Service package selection",
+              "Custom checkout",
+              "PIX with a QR code and copy-and-paste payment code",
+              "Automatic webhook confirmation",
+              "Admin dashboard",
+              "Price and availability management",
+            ],
+          },
         },
 
         {
           slug: "marques-leao",
           title: "Marques&Leão",
           type: "Real Estate Website with a Map and Property Listings",
+          status: "production",
           description:
             "A real estate website with property and agent pages, featured listings, responsive components, and Google Maps integration.",
           highlights: [
@@ -245,10 +308,30 @@ export const en = {
           ],
           links: {
             caseStudy: "/en/projects/marques-leao",
-            live: "marqueseleao.com.br",
+            live: "https://marqueseleao.com.br",
             github: "",
           },
           cta: "View case study",
+          details: {
+            role: [
+              "I worked on frontend development, responsive components, and the Google Maps integration.",
+            ],
+            context: [
+              "The project was built to present properties and agents through a clear, responsive, and easy-to-navigate commercial interface.",
+              "The experience combines featured property listings, dynamic pages, and mapping features to help visitors explore the available properties.",
+            ],
+            development: [
+              "I built the interface with Next.js, React, TypeScript, and Tailwind CSS, structuring responsive components for the listings and the property and agent pages.",
+              "I also implemented the Google Maps integration to complement how each property is presented and located.",
+            ],
+            features: [
+              "Property listings",
+              "Dynamic property and agent pages",
+              "Google Maps integration",
+              "Responsive components",
+              "Commercial interface",
+            ],
+          },
         },
       ],
     },

@@ -14,3 +14,25 @@
       color-mix(in srgb, white 2%, var(--color-black-bg))) padding-box,
     linear-gradient(to bottom, #797979, #363636) border-box;
 }
+
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.72;
+    transform: scale(0.9);
+  }
+}
+
+.status-pulse {
+  animation: status-pulse 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-pulse {
+    animation: none;
+  }
+}

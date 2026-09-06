@@ -42,6 +42,8 @@ const ProjectsCtaSection = ({ copy, cvHref }: ProjectsCtaSectionProps) => (
       <a
         className={cn(controlClassName, "gradient-border")}
         href="mailto:levyjrdev@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {copy.primaryButton}
         <Image src={Email} alt="" width={24} height={24} />
