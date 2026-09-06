@@ -1,6 +1,7 @@
 "use client"
 
 import type { Dictionary } from "@/content"
+import { getLocalizedPathname } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import Link from "next/link"
@@ -62,11 +63,23 @@ const Header = ({ copy, lang }: HeaderProps) => {
         </ul>
       </nav>
       <nav className="justify-self-end text-sm text-[#C3C2B7] md:text-base" aria-label="language navigation">
-        <Link className={cn("transition-colors hover:text-white", lang === "pt" && "text-white")} href="/pt">
+        <Link
+          className={cn(
+            "transition-colors hover:text-white",
+            lang === "pt" && "text-white",
+          )}
+          href={getLocalizedPathname(pathname, "pt")}
+        >
           PT
         </Link>{" "}
         <span>/</span>{" "}
-        <Link className={cn("transition-colors hover:text-white", lang === "en" && "text-white")} href="/en">
+        <Link
+          className={cn(
+            "transition-colors hover:text-white",
+            lang === "en" && "text-white",
+          )}
+          href={getLocalizedPathname(pathname, "en")}
+        >
           EN
         </Link>
       </nav>

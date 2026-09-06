@@ -1,6 +1,7 @@
 "use client"
 
 import type { Dictionary } from "@/content"
+import { getLocalizedPathname } from "@/lib/i18n"
 import { cn } from "@/lib/utils"
 import DownloadCV from "@/public/baixar-curriculo.svg"
 import Image from "next/image"
@@ -58,11 +59,25 @@ const Footer = ({ copy, cvHref, lang, navCopy }: FooterProps) => {
 
           <div className="flex items-center gap-5">
             <nav className="text-[#C3C2B7]" aria-label="footer language navigation">
-              <Link scroll={false} className={cn("transition-colors hover:text-white", lang === "pt" && "text-white")} href="/pt">
+              <Link
+                scroll={false}
+                className={cn(
+                  "transition-colors hover:text-white",
+                  lang === "pt" && "text-white",
+                )}
+                href={getLocalizedPathname(pathname, "pt")}
+              >
                 PT
               </Link>{" "}
               <span>/</span>{" "}
-              <Link scroll={false} className={cn("transition-colors hover:text-white", lang === "en" && "text-white")} href="/en">
+              <Link
+                scroll={false}
+                className={cn(
+                  "transition-colors hover:text-white",
+                  lang === "en" && "text-white",
+                )}
+                href={getLocalizedPathname(pathname, "en")}
+              >
                 EN
               </Link>
             </nav>
