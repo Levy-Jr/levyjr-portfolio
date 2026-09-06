@@ -1,4 +1,9 @@
+const cvHref = "/cv/Levy_Gomes_Web_Developer_CV_EN.pdf"
+
 export const en = {
+  cv: {
+    href: cvHref,
+  },
   nav: {
     home: "Home",
     projects: "Projects",
@@ -8,7 +13,6 @@ export const en = {
   },
   footer: {
     copyright: "Levy Gomes — Web Developer.",
-    cvHref: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
   },
 
   homePage: {
@@ -270,7 +274,7 @@ export const en = {
           ],
           stack: ["Next.js", "Meta Pixel", "Meta CAPI", "Bunny Stream"],
           links: {
-            live: "lp.viralizaaigo.com",
+            live: "https://lp.viralizaaigo.com",
             details: "",
           },
           cta: "View project",
@@ -412,6 +416,7 @@ export const en = {
     },
     sharedExperience: {
       title: "What these projects have in common",
+      listTitle: "Key points:",
       description:
         "These projects involved more than interface development. At different levels, I worked with deployment, domains, SSL, payment integrations, tracking, webhooks, VPS environments, Coolify, maintenance, and post-launch improvements.",
       items: [
@@ -473,7 +478,7 @@ export const en = {
           description:
             "Download a PDF with my professional summary, technical skills, and selected projects.",
           buttonLabel: "Download CV",
-          href: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
+          href: cvHref,
         },
       ],
     },

@@ -53,7 +53,12 @@ export default async function RootLayout({
       <body className={`${instrumentsSans.className} min-h-screen flex flex-col text-white bg-black-bg`}>
         <Header copy={dict.nav} lang={lang} />
         {children}
-        <Footer copy={dict.footer} navCopy={dict.nav} lang={lang} />
+        <Footer
+          copy={dict.footer}
+          cvHref={dict.cv.href}
+          navCopy={dict.nav}
+          lang={lang}
+        />
       </body>
     </html>
   );

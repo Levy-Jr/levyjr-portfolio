@@ -1,4 +1,9 @@
+const cvHref = "/cv/Levy_Gomes_Web_Developer_CV.pdf"
+
 export const pt = {
+  cv: {
+    href: cvHref,
+  },
   nav: {
     home: "Início",
     projects: "Projetos",
@@ -8,7 +13,6 @@ export const pt = {
   },
   footer: {
     copyright: "Levy Gomes — Desenvolvedor Web.",
-    cvHref: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
   },
   homePage: {
     hero: {
@@ -133,7 +137,7 @@ export const pt = {
   },
   projectsPage: {
     hero: {
-      eyebrow: "Projetos comerciais",
+      eyebrow: "Projetos",
       title: "Projetos web desenvolvidos, publicados e mantidos em produção.",
       description:
         "Uma seleção de sites, landing pages, plataformas web e projetos de e-commerce que desenvolvi para clientes comerciais, com foco em interface, integrações, deploy e manutenção.",
@@ -171,7 +175,7 @@ export const pt = {
           ],
           links: {
             caseStudy: "/pt/projects/fxsoftwares",
-            live: "fxsoftwares.com.br", // add if available
+            live: "https://fxsoftwares.com.br", // add if available
             github: "", // add if public
           },
           cta: "Ver estudo de caso",
@@ -200,7 +204,7 @@ export const pt = {
           ],
           links: {
             caseStudy: "/pt/projects/viralizaaigo-checkout",
-            live: "viralizaaigo.com",
+            live: "https://viralizaaigo.com",
             github: "",
           },
           cta: "Ver estudo de caso",
@@ -228,7 +232,7 @@ export const pt = {
           ],
           links: {
             caseStudy: "/pt/projects/marques-leao",
-            live: "marqueseleao.com.br",
+            live: "https://marqueseleao.com.br",
             github: "",
           },
           cta: "Ver estudo de caso",
@@ -257,7 +261,7 @@ export const pt = {
           ],
           stack: ["Next.js", "Meta Pixel", "Meta CAPI", "Bunny Stream"],
           links: {
-            live: "lp.viralizaaigo.com",
+            live: "https://lp.viralizaaigo.com",
             details: "",
           },
           cta: "Ver projeto",
@@ -283,7 +287,6 @@ export const pt = {
           },
           cta: "Ver projeto",
         },
-
         {
           slug: "zap-barbearia",
           title: "ZapBarbearia",
@@ -304,6 +307,26 @@ export const pt = {
           },
           badge: "Projeto arquivado",
           cta: "Ver demo",
+        },
+        {
+          slug: "okacodes",
+          title: "Okacodes",
+          type: "Site institucional para um estúdio de desenvolvimento de softwares",
+          description:
+            "Site institucional para apresentar os serviços de um estúdio de desenvolvimento de softwares",
+          highlights: [
+            "Site institucional em produção",
+            "Interface com animações",
+            "Apresentação de projetos concluídos",
+            "Apresentação de serviços prestados",
+          ],
+          stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+          links: {
+            live: "https://okacodes.com",
+            details: "",
+            github: ""
+          },
+          cta: "Ver projeto",
         },
       ],
     },
@@ -398,6 +421,7 @@ export const pt = {
     },
     sharedExperience: {
       title: "O que esses projetos têm em comum",
+      listTitle: "Pontos:",
       description:
         "Esses projetos envolveram mais do que desenvolvimento de interface. Em diferentes níveis, trabalhei com deploy, domínio, SSL, integrações de pagamento, rastreamento, webhooks, VPS, Coolify, manutenção e ajustes após publicação.",
       items: [
@@ -459,7 +483,7 @@ export const pt = {
           description:
             "Baixe uma versão em PDF com meu resumo profissional, habilidades técnicas e projetos selecionados.",
           buttonLabel: "Baixar currículo",
-          href: "/cv/Levy_Gomes_Web_Developer_CV.pdf",
+          href: cvHref,
         },
       ],
     },

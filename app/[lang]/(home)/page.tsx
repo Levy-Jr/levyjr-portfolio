@@ -18,7 +18,7 @@ const Home = async ({ params }: {
 
   return (
     <main>
-      <HeroSection copy={dict.homePage.hero} lang={lang} />
+      <HeroSection copy={dict.homePage.hero} cvHref={dict.cv.href} lang={lang} />
       <ExperienceSummary copy={dict.homePage.experienceSummary} />
       <FeaturedProjectsIntro copy={dict.homePage.featuredProjects} />
       <FeaturedProjectsSection
@@ -33,7 +33,7 @@ const Home = async ({ params }: {
       <ProductionWorkflowSection copy={dict.homePage.productionWorkflow} />
       <ContactSection
         copy={dict.homePage.contact}
-        cvHref={dict.footer.cvHref}
+        cvHref={dict.cv.href}
         cvLabel={dict.nav.downloadCv}
       />
     </main>

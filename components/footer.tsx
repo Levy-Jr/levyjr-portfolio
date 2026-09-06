@@ -10,11 +10,12 @@ import GradientBorderLink from "./gradient-border-link"
 
 type FooterProps = {
   copy: Dictionary["footer"]
+  cvHref: string
   lang: string
   navCopy: Dictionary["nav"]
 }
 
-const Footer = ({ copy, lang, navCopy }: FooterProps) => {
+const Footer = ({ copy, cvHref, lang, navCopy }: FooterProps) => {
   const pathname = usePathname()
 
   const date = new Date()
@@ -66,7 +67,7 @@ const Footer = ({ copy, lang, navCopy }: FooterProps) => {
               </Link>
             </nav>
 
-            <GradientBorderLink href={copy.cvHref} download>
+            <GradientBorderLink href={cvHref} download>
               {navCopy.downloadCv}
               <Image src={DownloadCV} alt="" width={24} height={24} />
             </GradientBorderLink>
