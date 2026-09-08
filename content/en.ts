@@ -175,7 +175,6 @@ export const en = {
       title: "Featured case studies",
       description:
         "Projects involving greater technical complexity, integrations, business rules, or production responsibility.",
-
       projects: [
         {
           slug: "fxsoftwares",

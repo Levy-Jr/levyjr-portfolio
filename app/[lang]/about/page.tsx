@@ -29,9 +29,16 @@ const About = async ({ params }: PageProps<"/[lang]/about">) => {
       <AboutHero copy={copy.hero} />
       <BackgroundSection copy={copy.background} />
       <WorkMethodSection copy={copy.workMethod} />
-      <TechnicalProfileSection copy={copy.technicalProfile} />
+      <TechnicalProfileSection
+        copy={copy.technicalProfile}
+        groups={dict.homePage.skills.groups}
+      />
       <CurrentEvolutionSection copy={copy.currentEvolution} />
-      <AboutCtaSection copy={copy.cta} cvHref={dict.cv.href} lang={lang} />
+      <AboutCtaSection
+        copy={copy.cta}
+        cvHref={dict.cv.href}
+        socialCopy={dict.homePage.contact}
+      />
     </main>
   )
 }

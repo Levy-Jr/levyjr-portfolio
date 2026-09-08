@@ -1,4 +1,4 @@
-import { Instrument_Sans, Manrope, Inter, Fustat } from 'next/font/google'
+import { Instrument_Sans } from 'next/font/google'
 import type { Metadata } from "next";
 import "../globals.css";
 import { locales } from "@/lib/i18n";
@@ -11,19 +11,7 @@ export const metadata: Metadata = {
   description: "Desenvolvedor Web com experiência em desenvolvimento, deploy e manutenção de projetos comerciais, incluindo sites, landing pages, e-commerces, integrações e VPS/Coolify.",
 };
 
-const inter = Inter({
-  subsets: ['latin']
-})
-
 const instrumentsSans = Instrument_Sans({
-  subsets: ['latin']
-})
-
-const manrope = Manrope({
-  subsets: ['latin']
-})
-
-const fustat = Fustat({
   subsets: ['latin']
 })
 
