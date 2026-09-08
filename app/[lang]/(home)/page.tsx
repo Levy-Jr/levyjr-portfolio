@@ -7,12 +7,24 @@ import BusinessImpactSection from "./components/business-impact-section";
 import ProductionWorkflowSection from "./components/production-workflow-section";
 import FeaturedProjectsIntro from "./components/featured-projects-intro";
 import FeaturedProjectsSection from "./components/featured-projects-section";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo";
 
-const Home = async ({ params }: {
-  params: Promise<{
-    lang: string
-  }>
-}) => {
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]">): Promise<Metadata> {
+  const { lang } = await params
+  const dict = getDictionary(lang)
+
+  return createPageMetadata({
+    lang,
+    title: dict.seo.homeTitle,
+    description: dict.homePage.hero.description,
+    absoluteTitle: true,
+  })
+}
+
+const Home = async ({ params }: PageProps<"/[lang]">) => {
   const { lang } = await params
   const dict = getDictionary(lang)
 

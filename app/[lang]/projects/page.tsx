@@ -4,6 +4,22 @@ import FeaturedProjectsSection from "./components/featured-projects-section"
 import ProjectsCtaSection from "./components/projects-cta-section"
 import ProjectsHero from "./components/projects-hero"
 import SharedExperienceSection from "./components/shared-experience-section"
+import type { Metadata } from "next"
+import { createPageMetadata } from "@/lib/seo"
+
+export async function generateMetadata({
+  params,
+}: PageProps<"/[lang]/projects">): Promise<Metadata> {
+  const { lang } = await params
+  const dict = getDictionary(lang)
+
+  return createPageMetadata({
+    lang,
+    title: dict.nav.projects,
+    description: dict.projectsPage.hero.description,
+    route: "/projects",
+  })
+}
 
 const Projects = async ({ params }: PageProps<"/[lang]/projects">) => {
   const { lang } = await params

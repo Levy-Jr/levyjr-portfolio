@@ -5,6 +5,9 @@ import ProjectsCtaSection from "../components/projects-cta-section"
 import ProjectDetails from "./components/project-details"
 import ProjectHero from "./components/project-hero"
 import ProjectShowcase from "./components/project-showcase"
+import JsonLd from "@/components/json-ld"
+import { createPageMetadata, getLocale } from "@/lib/seo"
+import { createProjectBreadcrumbJsonLd } from "@/lib/structured-data"
 
 export const dynamicParams = false
 
@@ -49,10 +52,12 @@ export async function generateMetadata({
   const { lang, slug } = await params
   const { project } = getProjectPageData(lang, slug)
 
-  return {
-    title: `${project.title} | Levy Jr.`,
+  return createPageMetadata({
+    lang,
+    title: project.title,
     description: project.description,
-  }
+    route: `/projects/${slug}`,
+  })
 }
 
 const Project = async ({
@@ -64,27 +69,36 @@ const Project = async ({
     slug,
   )
   const projectCopy = dict.projectsPage.project
+  const breadcrumbJsonLd = createProjectBreadcrumbJsonLd({
+    lang: getLocale(lang),
+    projectsLabel: dict.nav.projects,
+    projectTitle: project.title,
+    slug,
+  })
 
   return (
-    <main>
-      <ProjectHero
-        copy={projectCopy}
-        lang={lang}
-        project={project}
-        previousProject={previousProject}
-        nextProject={nextProject}
-        statusLabel={getStatusLabel(projectCopy, project.status)}
-      />
-      <ProjectShowcase
-        project={project}
-        stackTitle={projectCopy.stackTitle}
-      />
-      <ProjectDetails copy={projectCopy} details={project.details} />
-      <ProjectsCtaSection
-        copy={dict.projectsPage.cta}
-        cvHref={dict.cv.href}
-      />
-    </main>
+    <>
+      <JsonLd data={breadcrumbJsonLd} />
+      <main>
+        <ProjectHero
+          copy={projectCopy}
+          lang={lang}
+          project={project}
+          previousProject={previousProject}
+          nextProject={nextProject}
+          statusLabel={getStatusLabel(projectCopy, project.status)}
+        />
+        <ProjectShowcase
+          project={project}
+          stackTitle={projectCopy.stackTitle}
+        />
+        <ProjectDetails copy={projectCopy} details={project.details} />
+        <ProjectsCtaSection
+          copy={dict.projectsPage.cta}
+          cvHref={dict.cv.href}
+        />
+      </main>
+    </>
   )
 }
 

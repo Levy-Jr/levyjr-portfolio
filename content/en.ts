@@ -1,6 +1,10 @@
 const cvHref = "/cv/Levy_Gomes_Web_Developer_CV_EN.pdf"
 
 export const en = {
+  seo: {
+    homeTitle: "Levy Jr. | Web Developer",
+    jobTitle: "Web Developer",
+  },
   cv: {
     href: cvHref,
   },
